@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "start": "node server/server.js"
+  }
+}

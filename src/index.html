@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="h-screen">
+    <div
+      id="one"
+      class="bg-gradient-to-b from-green-900 to-green-600 h-full relative"
+    >
+      <div
+        class="absolute h-full w-full bg-[url('./images/triii.png')] opacity-15 animate-move-background sha"
+      ></div>
+      <section
+        class="absolute max-w-full resize overflow-auto z-50 lg:mx-10 sm:mx-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-move-background bg-gray-800 bg-[url('./images/lines.webp')] p-4 font-bold text-black rounded-tr-3xl rounded-bl-3xl border-solid border-4 border-black"
+      >
+        <article class="flex flex-col gap-2">
+          <div
+            id="message"
+            class="h-80 max-h-96 overflow-y-scroll whitespace-normal max-w-1/2 overflow-y-auto py-4 bg-white opacity-85 rounded-xl outline outline-2 outline-white border-solid border-2 border-black"
+          ></div>
+          <section class="flex gap-2 w-full">
+            <form
+              id="user-form-id"
+              class="w-full grid grid-cols-4"
+              autocomplete="off"
+            >
+              <input
+                placeholder="Enter any username..."
+                id="input-user"
+                type="text"
+                class="col-span-3 rounded-xl font-medium p-2 text-black outline outline-2 outline-white border-solid border-2 border-black"
+              />
+              <button
+                id="send-user-button"
+                type="submit"
+                class="rounded-xl bg-white hover:bg-gray-300 p-2 outline outline-2 outline-white border-solid border-2 border-black text-center flex justify-center"
+              >
+                <span id="jump-letter" class="flex">
+                  <span class="animate-bounce">U</span>
+                  <span class="animate-bounce animation-100">S</span>
+                  <span class="animate-bounce animation-200">E</span>
+                  <span class="animate-bounce animation-300">R</span>
+                </span>
+              </button>
+            </form>
+          </section>
+          <section class="flex gap-2 w-full">
+            <form
+              id="show-message"
+              action=""
+              class="w-full grid grid-cols-4"
+              autocomplete="off"
+            >
+              <input
+                placeholder="Enter Message..."
+                id="input-text"
+                type="text"
+                class="col-span-3 rounded-xl font-medium p-2 text-black outline outline-2 outline-white border-solid border-2 border-black"
+              />
+              <button
+                id="send-button"
+                type="submit"
+                class="rounded-xl bg-white hover:bg-gray-300 p-2 outline outline-2 outline-white border-solid border-2 border-black text-center flex justify-center"
+              >
+                <span id="jump-letter" class="flex">
+                  <span class="animate-bounce">S</span>
+                  <span class="animate-bounce animation-100">E</span>
+                  <span class="animate-bounce animation-200">N</span>
+                  <span class="animate-bounce animation-300">D</span>
+                </span>
+              </button>
+            </form>
+          </section>
+          <section class="flex gap-2 w-full">
+            <form
+              id="room-form-id"
+              class="w-full grid grid-cols-4"
+              autocomplete="off"
+            >
+              <input
+                placeholder="Enter Room... ('default' for public room)"
+                id="input-room"
+                type="text"
+                class="col-span-3 rounded-xl font-medium p-2 text-black outline outline-2 outline-white border-solid border-2 border-black"
+              />
+              <button
+                id="send-room-button"
+                type="submit"
+                class="rounded-xl bg-white hover:bg-gray-300 p-2 outline outline-2 outline-white border-solid border-2 border-black text-center flex justify-center"
+              >
+                <span id="jump-letter" class="flex">
+                  <span class="animate-bounce">J</span>
+                  <span class="animate-bounce animation-100">O</span>
+                  <span class="animate-bounce animation-200">I</span>
+                  <span class="animate-bounce animation-300">N</span>
+                </span>
+              </button>
+            </form>
+          </section>
+          <span id="is-user-room" style="display: none" class="text-green-500"
+            >You entered a room</span
+          >
+        </article>
+      </section>
+
+      <div
+        id="onn"
+        class="absolute h-1/4 w-full bg-white bottom-0 saw sha animate-move-background"
+      ></div>
+    </div>
+    <script type="module" src="script.js" defer></script>
+  </body>
+</html>
